@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   AppBar,
   Box,
+  Button,
   Divider,
   Drawer,
   IconButton,
@@ -14,12 +15,17 @@ import logo from "../../images/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+import { useAuth0 } from "@auth0/auth0-react";
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0(); // Destructure isAuthenticated and logout
+
   // hndle menu click
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
   //menu drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -47,9 +53,11 @@ const Header = () => {
         <li>
           <NavLink to={"/contact"}>Contact</NavLink>
         </li>
+       
       </ul>
     </Box>
   );
+
   return (
     <>
       <Box>
@@ -91,6 +99,38 @@ const Header = () => {
                 <li>
                   <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
+
+                {isAuthenticated && (
+                  <li>
+                    <p>
+                      {" "}
+                      Welcome<br></br>
+                      {user.name}
+                    </p>
+                  </li>
+                )}
+
+                {isAuthenticated ? (
+                  <li>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={() => logout()}
+                    >
+                      Log Out
+                    </Button>
+                  </li>
+                ) : (
+                  <li>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={() => loginWithRedirect()}
+                    >
+                      Log In
+                    </Button>
+                  </li>
+                )}
               </ul>
             </Box>
           </Toolbar>

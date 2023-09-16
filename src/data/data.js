@@ -5,6 +5,7 @@ import MasalaDosa from "../images/masala.jpg";
 import Paneer from "../images/paneer.jpg";
 import Gujrati from "../images/gujrati.jpeg";
 import biryani from "../images/biryani.jpg"
+import momos from "../images/momos.jpg"
 
 export const MenuList = [
   {
@@ -40,14 +41,14 @@ export const MenuList = [
     description:
       "Paneer Lababdaar (also called paneer butter masala) is a slightly sweet Indian dish of paneer, originating in New Delhi, in which the gravy is prepared usually with butter (makhan), tomatoes and cashews.[7] Spices such as red chili powder and garam masala are also used to prepare this gravy.",
     image: Paneer,
-    price: 300,
+    price: 250,
   },
   {
     name: "Maharaja Thali",
     description:
       'Thali (meaning "plate" or "tray") or Bhojanam (meaning "full meal") is a round platter used to serve food in South Asia, Southeast Asia and the Caribbean. Thali is also used to refer to an Indian-style meal made up of a selection of various dishes which are served on a platter. Thali is also used in south Asia ',
     image: Gujrati,
-    price: 500,
+    price: 400,
   },
   {
     name: "Biryani",
@@ -55,5 +56,11 @@ export const MenuList = [
       'Biryani is one of the most popular dishes in South Asia, as well as among the diaspora from the region. Similar dishes are also prepared in other parts of the world such as in Iraq, Myanmar, Thailand, and Malaysia.Biryani is the single most-ordered dish on Indian online food ordering and delivery services, and has been labelled as the most popular dish overall in India. ',
     image: biryani,
     price: 500,
+  },
+  {
+    name: "Momos Platter",
+    description:'Momo is a type of steamed filled dumpling in Tibetan and Nepali cuisine that is also popular in neighbouring Bhutan and India. Momo is usually served with a sauce known as achar influenced by the spices and herbs used within many South Asian cuisines "Eating too much momos, a popular dumpling dish, can have various negative impacts on adults.',
+    image: momos,
+    price: 299,
   },
 ];

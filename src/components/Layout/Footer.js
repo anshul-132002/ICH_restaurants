@@ -13,7 +13,7 @@ const Footer = () => {
            sx={{
             my: 3,
             "& a": {
-              fontSize: "2rem", // Adjust the font size here
+              fontSize: "1rem", // Adjust the font size here
               cursor: "pointer",
               mr: 3,
               color: "white",
@@ -44,7 +44,7 @@ const Footer = () => {
           variant="h6"
           sx={{
             "@media (max-width:600px)": {
-              fontSize: "1rem",
+              fontSize: "10rem",
             },
           }}
         >
