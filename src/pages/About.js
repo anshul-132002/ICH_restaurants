@@ -1,6 +1,13 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Box, Typography } from "@mui/material";
+import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import HomeWorkIcon from "@mui/icons-material/HomeWork";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
+import ContactPhoneSharpIcon from "@mui/icons-material/ContactPhoneSharp";
+import AlternateEmailSharpIcon from "@mui/icons-material/AlternateEmailSharp";
 
 const About = () => {
   return (
@@ -26,36 +33,76 @@ const About = () => {
           },
         }}
       >
-        <Typography variant="h4">Welcome To My Resturant</Typography>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quod,
-          suscipit, aperiam totam autem culpa cum eveniet dolorum quasi est
-          perspiciatis laborum. Nam recusandae nihil quia odio voluptatibus
-          facere omnis facilis rerum? Ab eum beatae nobis reiciendis, qui
-          temporibus aliquid, nesciunt velit sed quam recusandae necessitatibus,
-          tempora maxime. Repellendus incidunt, maxime labore dolorum eos
-          aperiam unde? At veritatis nesciunt eos quas cupiditate blanditiis est
-          quam maiores, amet, soluta exercitationem voluptatum, veniam
-          assumenda? Ratione perferendis officiis deserunt nostrum aspernatur
-          sed asperiores! Earum sunt placeat ducimus sint, deleniti amet esse
-          saepe voluptatem commodi laudantium quibusdam repellat nobis libero at
-          consectetur adipisci ipsa.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          deserunt libero reprehenderit cum sint fugit cumque temporibus modi
-          facere eveniet amet obcaecati ducimus harum velit maxime vel qui
-          voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
-          tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
-          ullam impedit velit quo, corporis ducimus numquam dignissimos
-          inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
-          aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
-          ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
-          nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
-          tempore voluptatibus perferendis esse eaque temporibus porro?
-          Aspernatur beatae deleniti illo autem!
-        </p>
+        <Typography variant="h4"><b><u>About Us</u></b></Typography>
+        <TableHead>
+          <TableRow>
+            <TableCell sx={{ bgcolor: "black", color: "white" }} align="center">
+              Organization Details
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableCell>
+              <HomeWorkIcon sx={{ color: "red", pt: 1 }} />
+              Name of Institution
+            </TableCell>
+            <TableCell>
+              <p>
+                Indian Coffee Workers' Co-operative Society Ltd., Jabalpur (M.P)
+                Known among public as ICWCS Ltd., Jabalpur & ICH.
+              </p>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <VpnKeyIcon sx={{ color: "red", pt: 1 }} />
+              Registration
+            </TableCell>
+            <TableCell>
+              <p>Under MP Co-operative Societies Act 1960 (Regd. No. 1485)</p>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <RestaurantMenuIcon sx={{ color: "red", pt: 1 }} />
+              Established
+            </TableCell>
+            <TableCell>
+              <p>At 592, Malviya Marg, Jabalpur -2, Madhya Pradesh</p>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <SupportAgentIcon sx={{ color: "red", pt: 1 }} />
+              Affiliation
+            </TableCell>
+            <TableCell>
+              <p>
+                All India Coffee Workers' Co-operative Societies Federation
+                Limited, Delhi – 7.
+              </p>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <ContactPhoneSharpIcon sx={{ color: "red", pt: 1 }} />
+              Contact No.
+            </TableCell>
+            <TableCell>
+              <p>0761 – 2310880, 2400498</p>
+            </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <AlternateEmailSharpIcon sx={{ color: "red", pt: 1 }} />
+              Email
+            </TableCell>
+            <TableCell>
+              <p>icwcsjabalpur@gmail.com</p>
+            </TableCell>
+          </TableRow>
+        </TableBody>
       </Box>
     </Layout>
   );

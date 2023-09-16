@@ -25,9 +25,11 @@ const Menu = () => {
               />
               <CardContent>
                 <Typography variant="h5" gutterBottom component={"div"}>
-                  {menu.name}
+                 <b>{menu.name}</b> 
                 </Typography>
-                <Typography variant="body2">{menu.description}</Typography>
+                <Typography variant="body2"><i>{menu.description}</i></Typography>
+                <br></br>
+                <Typography variant="body2"><h4>Price = {menu.price} </h4></Typography>
               </CardContent>
             </CardActionArea>
           </Card>

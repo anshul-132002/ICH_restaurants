@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import Logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
@@ -28,7 +29,7 @@ const Header = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <img src={Logo} alt="logo" height={"70"} width="200" />
+        <img src={logo} alt="logo" height={"70"} width="200" />
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
@@ -59,7 +60,7 @@ const Header = () => {
               aria-label="open drawer"
               edge="start"
               sx={{
-                mr: 2,
+                mr: 5,
                 display: { sm: "none" },
               }}
               onClick={handleDrawerToggle}
