@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <Box sx={{ textAlign: "center", bgcolor: "#1A1A19", color: "white", p: 3 }}>
         <Box
-           sx={{
+          sx={{
             my: 3,
             "& a": {
               fontSize: "1rem", // Adjust the font size here
@@ -43,8 +43,9 @@ const Footer = () => {
         <Typography
           variant="h6"
           sx={{
+            fontSize: "1rem", // Default font size
             "@media (max-width:600px)": {
-              fontSize: "10rem",
+              fontSize: "0.8rem", // Adjust font size for smaller screens
             },
           }}
         >

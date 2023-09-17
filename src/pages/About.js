@@ -14,21 +14,26 @@ const About = () => {
     <Layout>
       <Box
         sx={{
-          my: 15,
+          my: 8,
           textAlign: "center",
-          p: 2,
+          p: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center content horizontally
           "& h4": {
             fontWeight: "bold",
             my: 2,
-            fontSize: "2rem",
+            fontSize: "3rem",
           },
           "& p": {
             textAlign: "justify",
+            textAlign: "center"
           },
           "@media (max-width:600px)": {
             mt: 0,
             "& h4 ": {
               fontSize: "1.5rem",
+              
             },
           },
         }}
@@ -42,7 +47,7 @@ const About = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow>
+        <TableRow>
             <TableCell>
               <HomeWorkIcon sx={{ color: "red", pt: 1 }} />
               Name of Institution

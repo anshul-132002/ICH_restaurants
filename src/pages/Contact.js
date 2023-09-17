@@ -18,18 +18,20 @@ import {
 const Contact = () => {
   return (
     <Layout>
-  <Box sx={{ my: 5, ml: 10, "& h4": { fontWeight: "bold", mb: 2 } }}>
+  <Box sx={{ my: 5, textAlign: "center" ,fontWeight: "bold", mb: 2 }}>
     <Typography variant="h4" textAlign={"center"}>
       <u>Contact List of Indian Coffee Houses in JBP</u>
     </Typography>
     <p >Indian Coffee Workers' Co-operative Society Limited ( ICWCS LTD. )</p>
   </Box>
-  <div style={{ display: 'flex', justifyContent: 'center'}}/>
+  <div style={{ display: 'flex', alignItems: 'center'}}/>
     <Box
       sx={{
+        justifyContent:"center",
+        alignItems:"center",
         m: 3,
-        width: "1750px",
-        ml: 10,
+        width: "1050px",
+        ml: 55,
         "@media (max-width:600px)": {
           width: "300px",
         },
