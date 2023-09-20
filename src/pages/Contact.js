@@ -18,51 +18,38 @@ import {
 const Contact = () => {
   return (
     <Layout>
-  <Box sx={{ my: 5, textAlign: "center" ,fontWeight: "bold", mb: 2 }}>
-    <Typography variant="h4" textAlign={"center"}>
-      <u>Contact List of Indian Coffee Houses in JBP</u>
-    </Typography>
-    <p >Indian Coffee Workers' Co-operative Society Limited ( ICWCS LTD. )</p>
-  </Box>
-  <div style={{ display: 'flex', alignItems: 'center'}}/>
-    <Box
-      sx={{
-        justifyContent:"center",
-        alignItems:"center",
-        m: 3,
-        width: "1050px",
-        ml: 55,
-        "@media (max-width:600px)": {
-          width: "300px",
-        },
-      }}
-    >
+      <Box sx={{ my: 5, textAlign: "center", fontWeight: "bold", mb: 2 }}>
+        <Typography variant="h4" textAlign={"center"}>
+          <u>Contact List of Indian Coffee Houses in JBP</u>
+        </Typography>
+        <p>Indian Coffee Workers' Co-operative Society Limited ( ICWCS LTD.)</p>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        
+          width: "100%", // Make the table container full-width
+        }}
+      >
         <TableContainer component={Paper}>
-          <Table aria-label="contact table" >
+          <Table aria-label="contact table">
             <TableHead>
               <TableRow>
-                <TableCell
-                  sx={{ bgcolor: "black", color: "white" }}
-                  align="center"
-                >
+                <TableCell sx={{ bgcolor: "black", color: "white" }} align="center">
                   LOCATION
                 </TableCell>
-                <TableCell
-                  sx={{ bgcolor: "black", color: "white" }}
-                  align="center"
-                >
+                <TableCell sx={{ bgcolor: "black", color: "white" }} align="center">
                   PHONE
                 </TableCell>
-                <TableCell
-                  sx={{ bgcolor: "black", color: "white" }}
-                  align="center"
-                >
+                <TableCell sx={{ bgcolor: "black", color: "white" }} align="center">
                   Email
                 </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              <TableRow>
+            <TableRow>
                 <TableCell>
                   <SupportAgentIcon sx={{ color: "red", pt: 1 }} /> ICH, 592-
                   MALVIYA MARG, JABALPUR
